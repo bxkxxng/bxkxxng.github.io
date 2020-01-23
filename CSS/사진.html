@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>world</title>
+
+	<style type="text/css">
+		*{margin:0; padding:0;}
+		.gallery h1,
+		.gallery h2,
+		.gallery p img{text-align: center;}
+
+		.gallery p img{vertical-align:middle; width:100px; height:100px;}
+	</style>
+
+<script type="text/JavaScript">
+
+
+	//<![CDATA[
+
+		var myImg = new Array();
+		var imgNum = 7;
+
+		
+		for(var i=0; i<imgNum; i++){
+					myImg[i] = "../../img/world_0" + (i +1) + ".jpg";
+					
+					}
+
+		var i = 0;
+		
+		function prevBtn(){
+				i--;
+				if(i<0) i = myImg.length-1;
+				//console.log(i);
+				document.getElementById("galleryimg").src = myImg[i];
+				document.getElementById("galleryTitle").innerHTML = "사진"+(i+1);
+				return false;
+				
+				}
+
+		function nextBtn(){
+				i++;
+				if(i>myImg.length-1) i=0;
+				document.getElementById("galleryimg").src = myImg[i];
+		
+				return false;
+				}	
+				
+				//]]>
+
+
+
+
+</script>
+</head>
+<body>
+
+	<div class="gallery">
+	<p>
+	<a href="#prev" onclick="return prevBtn()"><img src="../../img/left.png" alt="이전버튼" >
+	</a>
+	<img src="../../img/world_01.jpg" alt="갤러리이미지" id="galleryimg" style="width: 500px; height :400px;">
+	<a href="#next" onclick="return nextBtn()">
+	<img src="../../img/right.png" alt="다음버튼" >
+	</a>
+	</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+    
+        
+        .container{
+            
+            background-color: violet;
+            width: 500px;
+            height: 500px;        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container div{
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            color: white;
+                            
+        }
+    
+    </style>
+    
+    
+    
+</head>
+<body>
+   <h1>특정 요소를 가로 세로 중심으로 정렬하는 방법</h1>
+   <p>가로 중앙 정렬: margin auto;조건: 안쪽상자의 width가 있어야 한다./바깥상자(display:flex; justify content: center;)</p>
+   <p>세로 중앙 정렬: 바깥상자(display:flex; justify content: center; align-items: center;)</p>
+   
+    <div class="container">
+        <div>나는 이 세상의 중심이다!!!</div>
+    </div>
+</body>
+</html>

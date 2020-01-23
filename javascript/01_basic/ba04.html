@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>내 이름은 <span id="name"></span>입니다</h1>
+    
+    <script>
+        //자바스크립트 변수 : data type과 무관하게 var를 사용해서 선언! 
+        var txt;// txt라는 변수를 선언했다!
+        //window 함수 prompt를 이용하여 문자열 값을 입력받아 txt변수에 저장!(초기화)
+        txt = prompt("당신의 이름은?","엘사",);
+        alert(typeof(txt));
+        document.getElementById("name").innerHTML=txt;
+    </script>
+</body>
+</html>

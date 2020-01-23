@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 30px;
+            
+        }
+        
+        h1{
+            
+            font-size: 3em; font-family: calibri, serif;
+        }
+        
+        h2{
+            font-size: 1.875em; font-family: georgia, sans-serif;
+            
+ 
+        }
+    
+/*        글씨체가 앞에거 없으면 뒤에꺼로 써진다*/
+        p.italic{
+            
+            font-style: italic;
+        }
+        
+        
+        p.oblique{
+            
+            font-style: oblique;
+        }
+        
+        p.small{
+            
+            font-variant: small-caps;
+        }
+        
+        
+        p.bolder{
+            
+            font-weight: 900;
+        }
+        p.lighter{
+            
+            font-weight: lighter;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>I should leave here.</h1>
+    <h2>Cuz I'm so starving. Let's go to eat.</h2>
+    <p class="italic">italic</p>
+    <p class="oblique">oblique</p>
+    <p class="small">This sentence Is written with Small caps.</p>
+    <p class="bolder">bolder</p>
+    <p class="lighter">lighter</p>
+    <br />
+    
+    <h3>가변폰트</h3>
+    <p>viewport는 브라우져 윈도우 크기 <br />
+    1vw는 viewport 넓이의 1%를 의미.<br />
+    1vh는 viewport 높이의 1%를 의미.</p>
+    
+    <h4 style="font-size: 5vw;">We should run for our lunch.</h4>
+<!--    넓이에만 반응, 높이에는 반응 x-->
+   <h4 style="font-size: 5vh;">We should run for our lunch.</h4>
+<!--    넓이에 반응x, 높이에만 반응-->
+   <h4 style="font-size: 5vmin;">We should run for our lunch.</h4>
+<!--   가로세로중 작은쪽에 반응-->
+   <h4 style="font-size: 5vmax;">We should run for our lunch.</h4>
+<!--   가로세로중 큰쪽에 반응-->
+    
+</body>
+</html>

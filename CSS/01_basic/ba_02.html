@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+<!--  외부css  external style sheet-->
+    <link rel="stylesheet" href="style.css">
+    
+    
+<!--
+    
+    내부 css internal style sheet
+-->
+    <style>
+    
+        h2{
+            
+            padding:  20px;
+            background-color: purple;
+        }
+    
+    
+    </style>
+    
+    
+</head>
+<body>
+    <h2>How to use CSS?</h2>
+    <p>Three ways to use CSS</p>
+    
+    <ul>
+        <li>External style sheet : 가장 먼저 적용</li>
+        <li>Internal stle sheet : 같은 요소에 대해 같은 효과가 적용될 경우 external효과를 덮어쓴다</li>
+        <li>Inline style sheet : 적용 순위가 가장 높다.</li>
+    </ul>
+    
+    <h2 style="border: 3px solid red">
+    <!--inline style sheet-->
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ    
+    </h2>
+    
+    <h2 style="font-size: 33px">
+    abcdefghijklmnopqrstuvwxyz
+    </h2>
+    <img src="../../../../images/externalCss.PNG">
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>자바스크립트의 자료형</h1>
+
+    <script>
+        document.write("<h3>String");
+        document.write('<h3>"시골":쌍따옴표</h3>');
+        document.write("<h3>'도시':작은따옴표</h3>");
+
+        var num = 15; //number
+        console.log(typeof(num));
+        var name = "Kim"; //string
+        var fullname = name + "Bokyung"; //string
+        console.log(fullname);
+        var name_age = name + 19; //string+number -> string
+        console.log(name_age+" : " + typeof(name_age));
+        
+        var a = 33;
+        var b = 77;
+        var sum = a+b;
+        console.log("sum:" + sum); //110
+        sum = eval(sum); //eval() 문자열을 식으로 읽는다.
+        console.log("eval(sum)"+sum); //110
+        
+        a = "33";
+        b = "77";
+        sum = a + b;
+        console.log(sum);
+        
+        //array 배열!!! 하나의 변수에 여러 값을 저장
+        var arr = new Array(5); //5개의 값을 저장할 수 있는 배열을 생성한것이다!
+        
+        console.log("typeof(arr):"+typeof(arr)); //object
+        //array는 index(0부터 시작)로 호출! 0,1,2,3,4 5개
+        arr[0]=7;
+        console.log("arr[0]:"+arr[0]);
+        
+        //배열의 길이:length로 확인
+        console.log("arr.length:"+arr.length);
+        
+        //arr배열의 각 칸에 순서대로 10,20,30,40,50저장!
+        for(var i=0; i < arr.length; i++){
+           arr[i] = (i+1)*10; 
+        }
+        
+        //arr배열의 각 칸에 들어있는 값을 순서대로 출력!
+        for(var i=0; i<arr.length; i++){
+            console.log("arr["+i+"]:"+arr[i]);
+        }
+        
+        console.log(arr[3]);
+        console.log(arr[5]); //undefined 
+        
+        //JSON (Javascript Object Notation) :data를 키값의 쌍으로 표현한다.{ 키 : 값value, 키: 값value}
+        var x = {"name": "tom", "age": 19};
+        console.log("x.name:" + x.name);
+        
+        //data 추가 삭제 javascript에서는 배열확장이 가능 Java는 x
+        arr[5] = 100;
+        console.log(arr[5]); //100
+        
+        //키 : 값 추가.
+        x.gender ="male";
+        console.log("x.gender:" +x.gender);
+        
+        //확장 for문을 사용해서 data출력
+        //일반 array 값 뽑기
+        for(var n in arr) {
+            //index값 출력
+            console.log("arr:"+n);
+            //index 이용해서 값 출력
+            console.log("arr["+n+"]:"+arr[n]);
+        }
+        
+        //json array key값 뽑기
+        for(var key in x){
+            
+            console.log("key:"+key);
+            /*console.log("value:"+x.key);//value추출안됨*/
+            console.log("value:"+x[key]);
+        }
+        
+        
+    </script>
+</body>
+
+</html>

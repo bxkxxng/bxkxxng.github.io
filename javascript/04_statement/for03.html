@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+        width: 100%;
+        /*background-image: url(susi.gif);*/
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 10px;
+            color: teal;
+        }
+    
+    </style>
+    <script>
+        document.write("<h1>구구단</h1>");
+        document.write("<table><tr>");
+        for(var i=2; i<=9; i++){
+            document.write("<th>"+i+"단</th>");
+        }
+        document.write("</tr><tr>");
+        for(var j=2; j<=9; j++){
+            document.write("<td>");
+            for(var k=1; k<=9; k++){
+                document.write(j + " * " +k+ " = "+(j*k)+"<br>"); 
+            }
+            document.write("</td>");
+        }
+        
+        document.write("</tr></table>");
+        
+        
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

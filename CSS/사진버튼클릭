@@ -1,0 +1,86 @@
+<CSS>
+        .picslider {
+
+            display: block;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+            background-color: #c69;
+        }
+
+        .picslider img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 200px;
+            transition: all .5s ease-in-out;
+
+        }
+
+        &:target {
+            transition: all .5s ease-in-out;
+        }
+
+        &:not(:target),
+        &:target~img#slide-4 {
+            position: relative;
+            opacity: 0;
+        }
+
+        &#slide-4 {
+            position: absolute;
+            opacity: 1;
+        }
+
+
+        .picslider ul {
+            position: absolute;
+            top: 0;
+            left: -2em;
+            list-style: none;
+        }
+
+        .picslider li {
+            width: 1.25em;
+            height: 1.25em;
+            font-family: monospace;
+            font-size: 1.5em;
+            border-radius: 50%;
+            background: wheat;
+            text-align: center;
+            margin-top: .7em;
+        }
+
+        .picslider a:hover {
+            background: #ece;
+        }
+
+        .picslider a {
+            text-decoration: none;
+            color: #c69;
+        }
+        
+        
+        
+        
+<HTML-body>
+
+ <div id="slider">
+                    <div class="picslide">
+                        <img src="../../img/project/africa1.jpg" alt="" />
+                        <img src="../../img/project/asia1.jpg" alt="" />
+                        <img src="../../img/project/europe1.jpg" alt="" />
+                        <img src="../../img/project/n_america1.jpg" alt="" />
+                        <img src="../../img/project/s_america1.jpg" alt="" />
+                        <ul>
+                            <li><a href="#slide-1">1</a></li>
+                            <li><a href="#slide-2">2</a></li>
+                            <li><a href="#slide-3">3</a></li>
+                            <li><a href="#slide-4">4</a></li>
+                            <li><a href="#slide-5">5</a></li>
+                        </ul>
+                    </div>
+                </div>

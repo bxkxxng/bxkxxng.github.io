@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>현재 시간은 <span id="hour"></span>시 <span id="min"></span>분입니다.</h2>
+    <p id="greeting"></p>
+    <script>
+//        현재시간을 추출해서 출력하고 그 시간을 기준으로 if문을 사용하여 적절한 인사말 출력! 10시이전 굿모닝 18시이전 굿에프터눈 이후 굿이브닝
+            
+        var date = new Date();  
+        var hour = document.getElementById("hour");
+        var min = document.getElementById("min");
+//        var date= New date();
+//        console.log(date);
+        var nowHour= date.getHours();
+        var nowMin= date.getMinutes();
+        var greeting= document.getElementById("greeting");
+        
+        hour.innerHTML= nowHour;
+        min.innerHTML= nowMin;
+        
+        if(nowHour<10)
+            greeting.innerHTML = "Morning";
+        else if(nowHour<18)
+            greeting.innerHTML = "Afternoon";
+        else
+            greeting.innerHTML = "Evening";
+    
+    </script>
+</body>
+</html>

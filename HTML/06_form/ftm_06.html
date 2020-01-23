@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    
+    
+</head>
+<body>
+    <h2>Various Types of Input Tag</h2>
+    <form action="" name="frm">
+        <label for=""></label>이름 :
+        <input type="text" name="" value="Kim"><br />
+        <label for=""></label>이름 :
+        <input type="text" name="" hidden><br />
+        <label for=""></label>이름 :
+        <input type="text" name="" value="Youn"><br />
+        <label for=""></label>이름 :
+        <input type="text" name="" value="Hong" disabled><br />
+        <label for=""></label>암호 :
+        <input type="password" name="password" required><br />
+        
+        <input type="radio" name="job" id="" value="singer">singer<br />
+        
+        <input type="checkbox" name="rain" id="" value="">dazzling rain<br />
+        
+        
+        <label for="">나이 :</label>
+        <input type="number" name="age" id="" min="50" max="200" step="3"><br /><br />
+        
+<!--        step을 사용하게되면 53,56,59,...-->
+        
+        <label for="">email :</label>
+        <input type="email" name="email" id=""><br /><br />
+                
+        <label for="">color :</label>
+        <input type="color" name="color" id=""><br /><br />
+        
+        <label for="">tel :</label>
+        <input type="tel" name="tel" id=""><br />
+        
+<!--        tel은 딱히 기능 x 아무거나 입력해도 값이 전달됨                                               -->
+                                                       
+        <label for="">tel :</label>
+        <input type="tel" name="tel" id="" placeholder="000-0000-0000" title="전화번호는 000-0000-0000형식으로 작성해주세요" pattern="\d{3}-\d{3,4}-\{4}"><br /><br />
+<!--          placeholder 어떤 형식 값을 쓰라는지 회색으로 보여줌                              pattern 지정값을 정해주기 (정규식 \뒤는 d=숫자를의미함)               -->
+       
+       <label for="">Time :</label>
+       <input type="time" name="time" id=""><br /><br />
+       
+       <label for="">Date :</label>
+       <input type="date" name="date" id="" max="2011-01-01" min="2010-01-01" step="2"><br /><br />
+       
+       
+       <label for="">file :</label>
+       <input type="file" name="file" id="" multiple><br /><br />
+<!--       file에서 여러파일 제출하고싶을때 multiple쓰면됨-->
+       
+       <label for="">Search :</label>
+       <input type="search" name="search" id="" multiple><br /><br />
+       
+       <label for="">range :</label>
+       <input type="range" name="range" id="" min="0" max="100" step="10"><br /><br />
+       <!--0-100까지 10단위로 조정-->
+       
+       
+       <input type="button" name="btn" id="" value="Hi!!!" onclick="alert('hi!!!!!!!!!!!')"><br /><br />
+       
+       <button type="button" name="" value="Click me!" onclick="location.href='http://www.daum.net'">Click me!</button>
+<!--     버튼테그 value에 쓰면 버튼 이름이 안나옴-->
+      
+      
+       
+        <input type="submit">
+        <input type="reset">
+        
+        
+        
+     </form>
+    
+    
+    
+</body>
+</html>

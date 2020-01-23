@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        input{
+            
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+    
+        input:disabled{
+            
+            background-color: violet;
+            color: white;
+        }
+        
+        input:enabled{
+            background-color: purple;
+            
+        }
+        input:focus{
+            background-color: palevioletred;
+        }
+        input:checked{
+            width: 20px; height: 20px;
+        }
+        input[type="text"]{
+            text-transform: uppercase;
+        }
+        input[value$="s"]{
+            padding: 20px
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>form 선택자</h1>
+    
+    <form action="">
+        <fieldset>
+            <legend>Web Standard</legend>
+            1:<input type="text" name="html" value="html" disabled><br />
+            2:<input type="text" name="css" value="css"><br />
+            3:<input type="text" name="js" value="js"><br /><hr />
+            
+            <input type="checkbox" value="bike" checked>Bike<br />
+            <input type="checkbox" value="car">Car  
+        
+        </fieldset>
+        
+        
+    </form>
+    
+</body>
+</html>

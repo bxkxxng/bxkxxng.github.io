@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    function move(url){
+        location.href=url;
+    }
+    
+    
+    </script>
+</head>
+<body>
+   
+<!--   //move 함수를 눌렀을때 url전달-->
+    <button type="button" onclick="move('http://www.daum.net')">Move to daum</button>
+    <button type="button" onclick="move('http://www.apple.com')">Move to apple</button>
+    
+    
+    
+    <button type="button" onclick="javascript:location.href='http://www.google.com'">Move to google</button>
+    
+    
+<!--    //back버튼-->
+    <button type="button" onclick="javascript:history.back()">back</button>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <h1 id="babo">숫자 입력받아 바탕색 칠하기</h1>
+    <!-- <script>
+        var body=document.getElementById("body");
+        var num = prompt("1~7 사이의 숫자를 입력하세요!", 2)
+        
+        if(num==1){
+            body.style.backgroundColor="red";
+        }
+        else if(num==2){
+            body.style.backgroundColor="orange";
+        }
+        else if(num==3){
+            body.style.backgroundColor="yellow";
+        }
+        else if(num==4){
+            body.style.backgroundColor="green";
+        }
+    
+        else if(num==5){
+            body.style.backgroundColor="blue";
+        }
+        else if(num==6){
+            body.style.backgroundColor="navy";
+        }
+        else if(num==7){
+            body.style.backgroundColor="violet";
+        }
+        else{
+            document.getElementById("babo").innerHTML="바보님을 환영합니다."
+            body.style.backgroundColor="pink";
+        }
+    </script>
+    -->
+    <!--    switch문은 특정한 값 몇 개를 각 값에 따라 각각 다르게 처리할경우 유리한 문장! 대개 if와 호환이 가능하다! -->
+    <script>
+        var body = document.getElementById("body");
+        var num = parseInt(prompt("1~7 사이의 숫자를 입력하세요", 2));
+        
+            
+        switch (num) {
+            case 1: //자동 형변환이 이루어지지 않으므로 문자열은 문자열로 비교!
+                body.style.backgroundColor = "red";
+                break; //switch문을 빠져나가라!!
+            case 2:
+                body.style.backgroundColor = "ornage";
+                break;
+            case 3:
+                body.style.backgroundColor = "yellow";
+                break;
+            case 4:
+                body.style.backgroundColor = "green";
+                break;
+            case 5:
+                body.style.backgroundColor = "blue";
+                break;
+            case 6:
+                body.style.backgroundColor = "navy";
+                break;
+            case 7:
+                body.style.backgroundColor = "violet";
+                break;
+            default:
+                document.getElementById("babo").innerHTML = "바보님을 환영합니다."
+                body.style.backgroundColor = "pink"
+                //위에 모든 경우에 해장하지 않을때!
+
+        }
+    </script>
+</body>
+
+
+</html>

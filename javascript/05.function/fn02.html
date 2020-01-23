@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id=tt>수업안한다.</title>
+    <script>
+        
+        //타이틀 제목을 바꾸기위해 str 배열 0~3사이의 random 정수를 추출하고싶어
+        var str = ["luck", "love", "glory", "idea"];
+        var tt = document.getElementById("tt");
+        
+        
+        //Math.random() ==>0~1 사이 숫자 아무거나 가져옴 0은포함 1은 안포함
+        //Math.floor 내림
+        //Math.round 반올림 
+        //Math.ceil 올림
+        
+        
+//        var ran = Math.random();
+//        console.log(ran);
+//        console.log(ran*4);
+//        document.title = str[ran];
+        
+        function setTitle(){
+            var ran =Math.floor(Math.random()*4);
+            document.title = str[ran];
+            console.log(ran*4);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>페이지 타이틀 바꾸기</h1>
+    <button type="button" onclick="setTitle()">제목 랜덤으로 바꾸긔 벝흔</button>
+
+
+</body>
+</html>

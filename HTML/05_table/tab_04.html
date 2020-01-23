@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table4</title>
+    <style>
+    
+        table,th,td{
+            
+            border: 1px solid purple;
+            border-collapse: collapse;
+            
+                    
+        }
+             
+            th {
+                text-align: center;
+                background-color: dimgray;
+            }
+    
+            
+            td{
+                text-align: center;
+                background-color: violet;
+                
+                
+            }
+    </style>
+    
+    
+    
+</head>
+<body>
+   <h2>html5 table</h2>
+<!--   웹표준에 맞는 테이블을 만들어보자-->
+   
+   <table width=100% summary="월별판매현황">
+      <caption>상품에 따른 월별 판매 현황</caption>
+<!--      캡션=상황에 따라 테이블,그림,링크에 대한 부가 설명-->
+      <colgroup>
+          <col width="40%">
+          <col width="20%">
+          <col width="20%">
+          <col width="20%">
+    </colgroup>
+       <thead>
+           
+           <tr>
+               <th rowspan="2" scope="col">구분</th>
+               <th colspan="3" scope="colgroup">상품종류</th>
+           </tr>
+           <tr>
+               <th scope="col">스마트폰</th>
+               <th scope="col">태블릿</th>
+               <th scope="col">데스크탑</th>
+               
+<!--   scope은 눈이 안보이는 사람들을 위한 구분을 짓는것 행을 따라가거나 열을 따라간다는 표시-->
+           </tr>
+       </thead>
+       <tfoot>
+          <tr>
+           <th scope="row">합계</th>
+            <td>500</td>
+            <td>300</td>
+            <td>100</td>
+            </tr>
+       </tfoot>
+              <tbody>
+              <tr>
+           <th scope="row">1월</th>
+            <td>300</td>
+            <td>200</td>
+            <td>40</td>
+           </tr>
+       </tbody>
+       
+            <tbody>
+              <tr>
+               <th scope="row">2월</th>
+                <td>200</td>
+                <td>100</td>
+                <td>60</td>
+               </tr>
+       </tbody>
+       
+       
+       
+   </table>
+   
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            border: 1px solid black;
+            opacity: 0.5;
+            position: absolute;
+        }
+    
+        div#myBox{
+            opacity: 1;
+            background-color: purple;
+            z-index: 1;
+            -webkit-animation: move 5s infinite linear;
+            animation: move 5s infinite linear;
+        }
+        
+        @keyframes move{
+            50%{
+                z-index: 5;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+   <h1>Ani fo z-index</h1>
+   <div id="container">
+       <div id="myBox"></div>
+       
+       <div style="top: 20px; left: 20px; z-index: 1">z-index: 1</div>
+       <div style="top: 40px; left: 40px; z-index: 2">z-index: 2</div>
+       <div style="top: 60px; left: 60px; z-index: 3">z-index: 3</div>
+       <div style="top: 80px; left: 80px; z-index: 4">z-index: 4</div>
+       
+   </div>
+   
+</body>
+</html>

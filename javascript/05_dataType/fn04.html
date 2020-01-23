@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h3 class="string">var str = "We love you"<br / >var str2 = "www.daum.net"</h3>
+    <script>     //012345678910
+        var str = "We love you";
+        var len = str.length;
+//        console.log(len);
+        var str2 = "www.daum.net";
+        
+        
+        document.write("string: "+ str+", 길이: "+len+"<hr />");
+        document.write("대문자: "+ str.toUpperCase() +"<hr />");
+        document.write("소문자: "+ str.toLowerCase() +"<hr />");
+        document.write("substr:" + str.substr(3,4) +"<hr />");
+        document.write("substring:" + str.substring(3,7) +"<hr />");
+        document.write("indexof'o':" + str.indexOf("o") +"<hr />");
+        document.write("lastindexof'o':" + str.lastIndexOf("o") +"<hr /><hr /><hr />");
+        document.write("lastindexof'o':" + str2.lastIndexOf(".") +"<hr />");
+        document.write("str2 net뽑기: " + str2.substring(str2.lastIndexOf(".")+1,str2.length) +"<hr />");
+        
+        //str2문자에있는 daum대신 love로 대체문자넣기
+        document.write("replace: " + str2.replace("daum","love")+"<hr />");
+        
+        //str2를 5번 반복하기!
+        document.write("repeat: " + str2.repeat(5)+"<hr />");
+        
+        //0번에 있는 문자 불러오기
+        document.write("charAt: " + str2.charAt(0)+"<hr />");
+        
+        
+        //split
+        //www.daum.net에서 점 기준으로 나눠짐.
+        // , / " delimeter 구분기호!
+        var str3= str2.split(".");
+        document.write(str3+"<hr />");
+        for(var k in str3){
+            document.write(str3[k]+"<br />");
+        }
+        
+        
+        
+        
+        
+    
+    </script>
+</body>
+</html>

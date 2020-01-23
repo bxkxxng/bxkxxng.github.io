@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul{list-style-type: none}
+        li{
+            padding: 20px;
+            background-color: pink;
+            margin-bottom: 5px;
+        }
+    
+        .skyblue{
+            background-color: skyblue;
+        }
+        #plum{
+            background-color: plum;
+        }
+        .sky{
+            background-color: cadetblue;
+        }
+    
+    </style>
+</head>
+<body>
+   <h2>select 우선순위</h2>
+    <ul>
+        <li>element:1point</li>
+        <li class="skyblue">class, attribute, pseudo-class:10points</li>
+        <li class="skyblue" id="plum">id:100point</li>
+        <li class="skyblue" id="plum">inline style: 1000point</li>
+        <li class="sky" id="plum" style="background-color: chocolate"> !important: The King!!!!!</li>
+    </ul>
+</body>
+</html>

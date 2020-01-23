@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: orange;
+            padding: 20px;
+        }
+        
+        h1:first-child{
+            color:white;
+        }
+        
+        p{
+            border: 1px solid red;
+        }
+/*        p:first-child{
+            background-color: tomato;
+        }*/
+        
+        p:last-child{
+            background-color: brown;
+        }
+        
+        p:first-of-type{
+            background-color: pink;
+        }
+        
+        div p:nth-child(3){
+            background-color: blue;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Traversing: 관계를 이용한 찾기</h1>
+    <p>오늘은 식혜를 마셨다.</p>
+    <h1>어제는 스파게티를 먹었다!</h1>
+    <div>
+        <p>오늘의 야식은 뭘까?</p>
+        <p>오랜만에 치킨이나 먹을까..</p>
+        <p>오랜만에 치킨이나 먹을까..</p>
+        <p>오랜만에 치킨이나 먹을까..</p>
+        <p>오랜만에 치킨이나 먹을까..</p>
+        <p>오랜만에 치킨이나 먹을까..</p>
+        <p>오랜만에 치킨이나 먹을까..</p>
+        <p>오랜만에 치킨이나 먹을까..</p>
+    </div>
+</body>
+</html>

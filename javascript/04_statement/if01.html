@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>귀하께서는 <span id="age"></span>세니까 <span id="drink"></span>를 구매할 수 있습니다.</h2>
+    
+    <script>
+    
+        var age=document.getElementById("age");
+        var drink=document.getElementById("drink");
+        
+        var age_input=prompt("민증 까보셈ㅋㅋㅋㅋㅋ");
+        age.innerHTML= age_input;
+        
+//        18세 이상 소주, 15~18 커피, 15미만 우유
+
+        if(age_input>18){
+            drink.innerHTML="소주";
+        }
+        else if(age_input<18 || age_input>14){
+            drink.innerHTML="커피,우유";
+        }
+        else{
+            drink.innerHTML="우유만";
+        }
+    
+    
+    </script>
+    
+    
+    
+    
+</body>
+</html>

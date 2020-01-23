@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    체중:<input type="text" id="weight">
+    신장:<input type="text" id="height">
+    이름:<input type="text" id="name">
+    <button type="button" onclick="mycheck()">건강체크</button><br>
+    <div>
+        <span id="name2"></span>님은<span id="result"></span>
+        
+    </div>
+    
+    
+    <script>
+        function mycheck(){
+            
+            var weight = parseInt(document.getElementById("weight").value);
+            var height = parseInt(document.getElementById("height").value);
+            var name = document.getElementById("name").value;
+            var name2 = document.getElementById("name2");
+            var result = document.getElementById("result");
+            var str="";
+            
+            
+            var normal= (height - 100) * 0.9;
+            //체중이 정상보다 5 작거나 5크면 체중관리가 필요.
+            //체중이 정상범위이면 적정체중입니다.
+            
+//            var test_result = (weight>normal+5||weight<normal=5)? "체중관리필요":"적정체중";
+            name2.innerHTML= name;
+            
+           (weight - normal>5 || weight- normal<-5)? str="체중관리필요": str="적정체중";
+            result.innerHTML=str;
+           
+        }
+        
+        
+    /*  T && T ==> T
+        T && F ==> F
+        F && T ==> F
+        F && F ==> F
+        
+        T || T ==> T
+        T || F ==> T
+        F || T ==> T
+        F || F ==> F
+        */
+        
+        
+    </script>
+</body>
+</html>

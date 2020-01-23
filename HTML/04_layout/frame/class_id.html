@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+    <style>
+    
+        h2{
+            
+            
+            background-color: black;
+        }
+        
+        .city{
+            
+            background-color: coral;
+            padding: 10px;
+            color:  bisque;
+        }
+    
+        .asia{
+            
+            background-color: goldenrod;
+        }
+    
+        #sun{
+            background-color: violet;
+            border: 3px solid black;
+            padding: 20px
+            
+                    }
+    
+    </style>
+class > id
+
+
+<body>
+    <h1>Class &amp; ID</h1>
+    
+    <ul>
+        <li>
+        class는 page안에서 특정엘리먼트들을 한번에 선택하기 위한 명칭.띄어쓰기로 여러개 설정가능하다. 
+        </li>
+        <li>
+        id는 page내에서 유일하게 특정 엘리먼트를 선택하기 위한 명칭.       
+        </li>
+    </ul>
+    
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>    
+    
+    <h2 class="city asia">Seoul</h2>
+    <p>Seoul is the capital of SouthKorea.</p> 
+    
+    <h2 class="city">Berlin</h2>
+    <p>Berlin is the capital of Germany.</p>
+                
+    <h2 id="sun" class="sun">Sun</h2>
+    <p>Sun is beautiful.</p>      
+    
+    <button type="button" onclick="erase()">태양아 가라</button>
+    <button type="button" onclick="appear()">태양아 켜져라</button>    
+    
+    <script>
+    
+        var sun=document.getElementById("sun")
+        function erase(){
+            
+            sun.style.display =" none";
+        }
+        
+                function appear(){
+            
+            sun.style.display =" block";
+        }
+    </script>
+</body>
+</html>

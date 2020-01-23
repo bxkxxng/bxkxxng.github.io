@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        div{
+            
+            width: 90%;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 10px;
+            border: 2px solid red;
+            overflow: hidden
+        }
+    
+        #box1{
+            white-space: nowrap;
+        }
+/*        줄안바꿈*/
+        #box2{
+            white-space: pre;
+        }
+/*        pre tag와 동일 뜨ㅣ어쓰기랑 줄바꿈 */
+        
+        
+        
+        #box3{
+            white-space: pre-line;
+        }
+/*        띄어쓰기는 적용안되고 라인만 적용*/
+    
+        #box4{
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Whitespace Option</h1>
+    <div id="box">The Walt Disney Company, commonly known as Disney (/ˈdɪzni/),[3] is an American diversified multinational mass media and entertainment conglomerate headquartered at the Walt Disney Studios complex in Burbank, California.</div>
+    <div id="box1">The Walt Disney Company, commonly known as Disney (/ˈdɪzni/),[3] is an American diversified multinational mass media and entertainment conglomerate headquartered at the Walt Disney Studios complex in Burbank, California.</div>
+    <div id="box2">The Walt Disney Company,         commonly known as Disney 
+    (/ˈdɪzni/),[3] is an American diversified multinational mass media 
+    and entertainment conglomerate headquartered at the Walt Disney 
+    Studios complex in Burbank, California.</div>
+    <div id="box3">The Walt Disney Company, 
+    commonly known as Disney (/ˈdɪzni/),[3]            is 
+    an American diversified multinational mass media and entertainment conglomerate headquartered at the Walt Disney Studios complex in Burbank, California.</div>
+    <div id="box4">The Walt Disney Company, commonly known as Disney (/ˈdɪzni/),[3] is an American diversified multinational mass media and entertainment conglomerate headquartered at the Walt Disney Studios complex in Burbank, California.</div>
+</body>
+</html>

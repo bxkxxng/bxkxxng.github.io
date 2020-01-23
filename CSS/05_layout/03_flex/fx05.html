@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box}
+        
+        body{
+            font-family: "맑은고딕", sans-serif;
+            margin: 0;
+        }
+        /*header*/
+        header{
+            padding: 60px;
+            text-align: center;
+            background-color: palevioletred;
+            color: white;
+        }
+        /*nav*/
+        nav{
+            display: flex;
+            background-color: black;
+            justify-content: space-between;
+        }
+        
+        nav a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            flex: 1;
+        }
+        
+        nav a:hover{
+            background-color: white;
+            color: black;
+        }
+        
+        /*row*/
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            
+            flex: 30%;
+            background-color: palevioletred;
+            color: white;
+            padding: 20pm;
+            
+        }
+        
+        .main{
+            
+            flex: 70%;
+            background-color: lightpink;
+            padding: 20px;
+            
+        }
+        /*footer*/
+        footer{
+            padding: 20px;
+            text-align: center;
+            background-color: plum;
+            color: white;
+        }
+        
+        
+        .myPhoto{
+            height: 60px;
+            background-color: plum;
+            padding: 20px;
+            margin-bottom: 5px;
+            
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+   <div style="text-align: center; background-color: violet; padding: 5px;">
+       <h4>반응형 효과 체험 플렉스 레이아웃, 창 크기를 조절해보쟈</h4>
+       
+   </div>
+
+   <header>
+        <h1>My Websitd</h1>
+        <p>with a <b>flexible</b> layout</p>
+   </header>    
+    
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    
+    <div class="row">
+        <div class="side">
+            <h2>About me: </h2>
+            <h5>Photo of me: </h5>
+            <div class="myPhoto" style="height: 20px">My photo</div>
+            <p>I'm a Queen.</p>
+            <h3>최근 방문자</h3>
+            <div class="myPhoto">My photo</div>
+            <div class="myPhoto">My photo</div>
+            <div class="myPhoto">My photo</div>
+        </div>
+        
+        <div class="main">
+            <h2>오늘의 대한민국</h2>
+            <h5>힘내라 힘, 대한민국!!!</h5>
+            <div class="myPhoto" style="height: 300px">Mickey Mouse</div>
+            <p>Mickey Mouse is a cartoon character and the mascot of The Walt Disney Company. He was created by Walt Disney and Ub Iwerks at the Walt Disney Studios in 1928. An anthropomorphic mouse who typically wears red shorts, large yellow shoes, and white gloves, Mickey is one of the world's most recognizable characters.Created as a replacement for a prior Disney character, Oswald the Lucky Rabbit, Mickey first appeared in the short Plane Crazy, debuting publicly in the short film Steamboat Willie (1928), one of the first sound cartoons. He went on to appear in over 130 films, including The Band Concert (1935), Brave Little Tailor (1938), and Fantasia (1940). Mickey appeared primarily in short films, but also occasionally in feature-length films. Ten of Mickey's cartoons were nominated for the Academy Award for Best Animated Short Film, one of which, Lend a Paw, won the award in 1942. In 1978, Mickey became the first cartoon character to have a star on the Hollywood Walk of Fame.</p>
+        </div>
+  
+    </div>
+    <footer>
+            <h2>나는 오늘만 산다.</h2></footer>
+</body>
+</html>

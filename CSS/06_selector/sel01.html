@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1,p{
+            background-color: crimson;
+        }
+        
+        div>p{
+            
+            font-size: 25px;
+        }
+        div p{
+            background-color: tomato;
+            
+        }
+        
+        div+p{
+            text-transform: uppercase;
+            background-color: orange
+        }
+    
+        div~p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+   <h1>Selector & Combinator</h1>
+   <ul>
+       <li>콤마 (div,p) : div 그리고 p</li>
+       <li>띄어쓰기 (div p) : div 후손인 P</li>
+       <li>꺽쇠 (div > p) : div 자식 p</li>
+       <li>플러스 (div + p) : div 뒤쪽 인접한 형제 p</li>
+       <li>물결 (div ~ p) : div뒤쪽의 모든형제 p</li>
+   </ul>
+    
+    <p>universe</p>
+    <div>
+        
+        <p>Little Prince</p>
+        <div class="star">
+            
+            <p>fox</p>
+            <p>snake</p>
+            <span>
+                <p>hat</p>
+            </span>
+            
+        </div>
+             
+    </div>
+        
+        <p>rose</p>
+        <p>rose</p>
+        <p>rose</p>
+        <p>rose</p>
+        <p>rose</p>
+        
+    
+    
+    
+    
+</body>
+</html>

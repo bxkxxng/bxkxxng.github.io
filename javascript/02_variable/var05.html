@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>입력창 세 개(두 개는 입력용, 하나는 결과 출력용)와 연산버튼 4개 그리고 = 버튼을 만들어서 사칙연산을 수행하고 결과를 출력하시오</h1>
+
+
+    <form action="" name="cal">
+        <input type="text" name="num1" id="num1">
+        <input type="text" name="num2" id="num2">
+
+        <!--
+        <button type="button" onclick="plus()">+</button>
+        <button type="button" onclick="sub()">-</button>
+        <button type="button" onclick="mul()">*</button>
+        <button type="button" onclick="div()">/</button>
+-->
+
+        <select name="oper" id="">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+        </select>
+
+        <button type="button" onclick="calcul()">=</button>
+        <input type="text" id="result">
+        <p id="errTxt"></p>
+
+    </form>
+
+    <script>
+        var f = document.cal; //form name값으로 가져옴.
+        //console.log(f.num1.value); form에 num1이름의 값가져옴
+        var num1 = document.getElementById("num1");
+        var num2 = document.getElementById("num2");
+        var result = document.getElementById("result");
+        var err = document.getElementById("errTxt");
+
+        //        var a = num1.value;
+        //        console.log("a: " + a);
+        //        console.log(typeof(a));
+        //        console.log(isNaN(a)); //값이 숫자인지 판별 - boolean(true, false) 반환
+
+        var resultOfCal = 0;
+//        var n1 = parseInt(num1.value);
+        //console.log('n1:'+ n1) function앞에 변수를 먼저 선언해주면 읽질못함. 값을 입력받지 않았으니까!
+//        var n2 = parseInt(num2.value);
+        var op = ""; //빈 문자열로 변수 op초기화
+
+
+        function calcul() {
+            err.innerHTML = "";
+            var a = validate();
+            alert(a);
+            console.log(a);
+            if (a) {
+                var op = f.oper.value; //form의 name=oper으로 부터값을 받아 op에저장!
+                if (op == 'add') {
+                    plus();
+                } else if (op == 'sub') {
+                    sub();
+                } else if (op == 'mul') {
+                    mul();
+                } else if (op == 'div') {
+                    div();
+                }
+
+            }
+        }
+        //n1과 n2의 값이 숫자인지 검증하는 함수!
+        function validate() {
+            var n1 = parseInt(num1.value);
+            var n2 = parseInt(num2.value);
+            //n1이나 n2의 값이 숫자가 아니면 
+            if (isNaN(n1) || isNaN(n2)) {
+                err.innerHTML = "숫자를 입력하시오!";
+                result.value="";
+                
+                //err에 글쓰기
+                return false;
+                //함수끝내면서 아무것도 반환하지 않음
+            } else {
+
+                return true;
+                //둘다 숫자일 경우 함수를 끝내며 true를 반환한다
+            }
+        }
+
+        function plus() {
+            var n1 = parseInt(num1.value);
+            var n2 = parseInt(num2.value);
+            //            alert("wow");
+            resultOfCal = n1 + n2;
+            //            alert(resultOfCal);
+            result.value = resultOfCal;
+        }
+
+        function sub() {
+            var n1 = parseInt(num1.value);
+            var n2 = parseInt(num2.value);
+
+            resultOfCal = n1 - n2;
+            result.value = resultOfCal;
+        }
+
+        function mul() {
+            var n1 = parseInt(num1.value);
+            var n2 = parseInt(num2.value);
+
+            resultOfCal = n1 * n2;
+            result.value = resultOfCal;
+
+        }
+
+        function div() {
+            var n1 = parseInt(num1.value);
+            var n2 = parseInt(num2.value);
+
+            resultOfCal = n1 / n2;
+            result.value = resultOfCal;
+
+        }
+    </script>
+</body>
+
+</html>

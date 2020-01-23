@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        body{
+            margin: 0
+        }
+    
+        .container{
+            
+            background-color: violet;
+            display: flex;
+        
+                        
+        }
+    
+        .container div{
+            
+            background-color: rebeccapurple;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            flex: 2;
+        }
+        
+        p{
+            
+            width: 100px;
+            margin: 10px;
+            background-color: purple;
+            color: orange;
+            height: 100px;
+            flex: 1;
+        
+            
+        }
+        
+        .c1{
+            
+            flex-direction: row;
+        }
+        .c2{
+            
+            flex-direction: row-reverse;
+        }
+        
+        .c3{
+            
+            flex-direction: column;
+        }
+        
+        .c4{
+            
+            flex-direction: column-reverse;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container c1">
+        
+        <p>direction: row</p>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <hr />
+    
+    <div class="container c2">
+        
+        <p>direction: row -reverse</p>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+    <hr />
+    <div class="container c3">
+        
+        <p>direction: column</p>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+    <hr />
+    <div class="container c4">
+        
+        <p>direction: column - reverse</p>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

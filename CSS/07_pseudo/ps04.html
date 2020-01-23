@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+    
+        th,td{
+            position: relative;
+            padding: 10px;
+            text-align-last: left;
+            border-bottom: 1px soli #ddd;
+        }
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        tr:hover{
+            background-color: lightblue;
+        }
+        th:hover::after, td:hover::after{
+            content: "";
+            background-color: #ffa;
+            position: absolute; 
+            left: 0;
+            top: -5000px;
+            height: 10000px;
+            width: 100%;
+            z-index: -1;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <h1>기말고사 성적표</h1>
+    <table>
+        <tr>
+           <th>성</th>
+           <th>이름</th>
+           <th>점수</th>
+        </tr>
+        <tr>
+            <td>왕</td>
+            <td>똑똑</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>왕</td>
+            <td>바보</td>
+            <td>97</td>
+        </tr>
+         <tr>
+            <td>왕</td>
+            <td>똑똑</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>왕</td>
+            <td>바보</td>
+            <td>97</td>
+        </tr>
+    </table>
+</body>
+</html>

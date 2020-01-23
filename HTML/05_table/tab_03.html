@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+        <style>
+    
+        table,th,td{
+            
+            border: 1px solid red;
+            border-collapse: collapse;
+            
+                    
+        }
+             
+            th {
+                text-align: center;
+                background-color: dimgray;
+            }
+    
+            
+            td{
+                text-align: center;
+                background-color: aquamarine;
+                
+                
+            }
+    </style>
+    
+    
+    
+</head>
+<body>
+    
+    <h3>Rowspan &amp; Colspan</h3>
+    <p>표의 cell을 가로,세로로 병합</p>
+    
+    
+    <table style="width: 100%; background-color: bisque;" >
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td colspan="2">Kimberly</td>
+            
+            <td rowspan="3">20</td>
+        </tr>
+        <tr>
+            <td>Kevin</td>
+            <td>John</td>
+           
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>Thor</td>
+            
+        </tr>
+    </table>
+    
+    
+    
+</body>
+</html>

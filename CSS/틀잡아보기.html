@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>푸른언덕에 배낭을 매고</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        body {
+            font-family: "맑은고딕", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: left;
+            height: 200px;
+            width: 100%;
+
+        }
+
+        nav {
+            width: 100%;
+            margin: 2px;
+            padding: 8px;
+            background-color: darkgray;
+            color: white;
+            position: fixed;
+            display: flex;
+
+
+        }
+
+        nav a {
+            flex: initial;
+            padding-left: 10px;
+            color: white;
+            background-color: darkgray;
+            text-decoration: none;
+
+        }
+
+        nav #btn {}
+
+        nav a:hover {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+        }
+
+        article #a1 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        div .asia {
+
+            width: 100px;
+            height: 50px;
+            flex: 25%;
+            padding: 0 4px;
+            max-width: 25%;
+        }
+
+        div .africa {
+
+            width: 100px;
+            height: 50px;
+            flex: 25%;
+            padding: 0 4px;
+            max-width: 25%;
+        }
+        
+        div .europe {
+
+            width: 100px;
+            height: 50px;
+            flex: 25%;
+            padding: 0 4px;
+            max-width: 25%;
+        }
+        .gallery h1,
+        .gallery h2,
+        .gallery p img {
+            text-align: center;
+        }
+
+        .gallery p img {
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+        }
+
+        footer {
+            clear: both;
+            background-color: gray;
+            color: white;
+            font-size: 15px;
+            padding: 1px;
+        }
+    </style>
+
+
+
+    <script type="text/JavaScript">
+
+
+        //<![CDATA[
+
+		var myImg = new Array();
+		var imgNum = 7;
+
+		
+		for(var i=0; i<imgNum; i++){
+					myImg[i] = "../../img/world_0" + (i +1) + ".jpg";
+					
+					}
+
+		var i = 0;
+		
+		function prevBtn(){
+				i--;
+				if(i<0) i = myImg.length-1;
+				//console.log(i);
+				document.getElementById("galleryimg").src = myImg[i];
+				document.getElementById("galleryTitle").innerHTML = "사진"+(i+1);
+				return false;
+				
+				}
+
+		function nextBtn(){
+				i++;
+				if(i>myImg.length-1) i=0;
+				document.getElementById("galleryimg").src = myImg[i];
+				document.getElementById("galleryTitle").innerHTML ="사진"+(i+1);
+				return false;
+				}	
+				
+				//]]>
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+    <div>
+        <header id="home">
+            <h1>여행은 좋은것</h1>
+        </header>
+        <nav id="main_menu">
+            <a href="#home">홈</a>
+            <a href="#">회사소개</a>
+            <a href="#">여행지</a>
+            <input type="search" name="search" required value placeholder="국가 또는 도시로 검색해보세요" style="display: inline-block; width: 300px;">
+            <button name="search_btn" id="btn1">검색</button>
+        </nav><br />
+        <section>
+            <article id="a0" style="text-align: center;">
+                <div class="gallery">
+                    <p>
+                        <a href="#prev" onclick="return prevBtn()"><img src="../../img/left.png" alt="이전버튼">
+                        </a>
+                        <img src="../../img/world_01.jpg" alt="갤러리이미지" id="galleryimg" style="width: 700px; height :400px;">
+                        <a href="#next" onclick="return nextBtn()">
+                            <img src="../../img/right.png" alt="다음버튼">
+                        </a>
+                    </p>
+                </div>
+            </article><br />
+<!--            <article id="a1">
+                <div class="asia">
+
+                    <p img src="../../img/project/asia1.jpg"></p>
+                    <p img src="../../img/project/asia2.jpg"></p>
+                    <p img src="../../img/project/asia3.jpg"></p>
+
+
+                </div>
+
+            </article>
+            <article id="a2">
+                <div class="africa">
+
+                    <img src="../../img/project/africa1.jpg">
+                    <img src="../../img/project/africa2.jpg">
+                    <img src="../../img/project/africa3.jpg">
+
+                </div>
+
+            </article>
+            <article id="a2">
+                <div class="europe">
+
+                    <img src="../../img/project/europe1.jpg">
+                    <img src="../../img/project/europe2.jpg">
+                    <img src="../../img/project/europe3.jpg">
+
+                </div>-->
+
+            <!--</article>-->
+        </section>
+
+        <aside>
+            <div class="aside">
+
+            </div>
+        </aside>
+        <footer>
+            <br />
+            <pre>
+               Tour Travel Thumbs Up
+               Address  : Toronto, Ontario, Canada
+               Contact  : (tel) +1 416-000-0000
+                          (fax) +1 416-000-0000
+                          (e-mail) traveljoa@tour.com 
+            </pre><br />
+            <p style="text-align:center;">&copy; 2020 TravelJoa.com</p>
+        </footer>
+
+    </div>
+
+    <div style="position:fixed; bottom:5px; right:5px;">
+        <a href="#home"><i class="material-icons" style="background-color: black; color: white; border: 1px solid; border-radius:50%;"></i></a>
+
+    </div>
+</body>
+
+</html>

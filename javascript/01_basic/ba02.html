@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<!--    external css-->
+<!--    <link rel="stylesheet" href="style.css"-->
+<!--    external js-->
+    <script src="myScript.js">
+    </script>
+<!--    internal js-->
+<!--   internal js 위치 - 웹사이트 어디서나 가능! 주로 웹페이지 하단에 위치한다.-->
+    <script>
+        alert("Hi whatsup?");
+        document.write("<h1>Time to go to bed!</h1>");
+        document.write("<p>No, I have to study Javascript now!</p>");
+       /* document.getElementById('change').innerHTML="Sleepy!!!!";*/
+        /*위에 작성시 실행x 문서를 위에서 아래로 읽어지는데 change를 찾을 수 없어함.바보컴터세계*/
+       
+
+    </script>
+</head>
+<body>
+    <p>Today is my Birthday lol </p>
+    
+    
+    
+    <button type="button" onclick="myFunc()">Hello Elsa!</button>
+    <div id="change"></div>
+    
+    <hr />
+    
+    <a href="javascript:void(0);" onclick="document.getElementById('change').innerHTML =Date()">행복하면 시간과 함께 가야해.</a>
+    <script>
+       document.getElementById('change').innerHTML="Sleepy!!!!";
+        document.write("<h1>Time to go to bed!</h1>");
+        document.write("<p>No, I have to study Javascript now!</p>");
+        
+    </script>
+    
+</body>
+</html>

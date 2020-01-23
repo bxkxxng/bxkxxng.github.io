@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio butoon</title>
+</head>
+<body>
+    <h3>Radio button</h3>
+    
+    <p>radio button은 한 그룹 내에세 하나만 선택가능</p>
+    <p>제출시 넘겨주는 값은 레이블이 아니라 value에 표시된 값</p>
+    <hr />
+    
+    <h3>Checkbox</h3>
+    <p>checkbox는 한 그룹내에서 복수 선택이 가능하다</p>
+    <hr />
+    <form action="">
+       <fieldset>
+       <legend>성별</legend>
+        <input type="radio" name="gender" value="male" id="g1" checked>
+        <label for="g1">male</label>
+<!--    checked 기본적으로 체크되있음 한 그룹에 checked는 한개만 작성-->
+        <input type="radio" name="gender" value="female" id="g2" >
+        <label for="g2">female</label>       
+        
+        <input type="radio" name="gender" value="neutral" id="g3" >
+        <label for="g3">neutral</label>
+        <br />
+        <input type="submit"><input type="reset">
+        </fieldset>
+        <fieldset>
+            <legend>특기</legend>
+            <input type="checkbox" name="skill" value="java">
+            <label for="s1">java</label>
+            <input type="checkbox" name="skill" value="python">
+            <label for="s2">Python</label>
+            <input type="checkbox" name="skill" value="R">
+            <label for="s3">R</label>
+            <br />
+            <input type="submit"><input type="reset">
+        </fieldset>
+    </form>
+</body>
+</html>

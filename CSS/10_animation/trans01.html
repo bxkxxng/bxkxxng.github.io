@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            border: 1px solid black;
+            
+        }
+        .translate{
+            transform: translate(150px, 100px);
+            background-color: orange;
+        }
+        .skew{
+            background-color: orangered;
+            transform: skewY(45deg)
+            
+        }
+        .scale{
+            background-color: crimson;
+            transform: scale(0.5,1.5)
+        }
+        .rotate{
+            background-color: chocolate;
+            transform: rotateX(130deg) rotateY(45deg);
+        }
+        .matrix:hover{
+            background-color: red;
+            transform: matrix(2, 1, 0.3, 2, 500, 100);
+            transition: 8s;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>transform</h1>
+    
+    <div class="here">기본</div>
+    <div class="translate">translate</div>
+    <div class="skew">skew</div>
+    <div class="scale">scale</div>
+    <div class="rotate">rotate</div>
+    <div class="matrix">matrix</div>
+</body>
+</html>

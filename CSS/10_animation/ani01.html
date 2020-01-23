@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            margin: 30px;
+        }
+        
+        div#no_fill{
+            animation-name: ani; 
+            animation-duration: 2s;
+            animation-fill-mode: none;
+        }
+        
+        div#fill{
+            animation-name: ani; 
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes ani{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: hotpink;
+            }
+        }
+        
+    
+        
+    
+    </style>
+    
+    
+</head>
+<body>
+   <h1>Animation</h1>
+    <div id="no_fill"></div>
+    <div id="fill"></div>
+</body>
+</html>

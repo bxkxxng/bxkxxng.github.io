@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>설문지를 만들자!</title>
+    
+    <style>
+        header{
+            
+            background-color: black;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+    
+        section{
+            
+           background-color: white;
+            padding: em;
+            text-align: center;
+            
+        }
+        
+        th{
+            background-color: black;
+            color: white;
+            width: 100px;
+            
+        }
+        
+        article.qna1{
+            
+            background-color: silver;
+            padding: 2em;
+            text-align: center;
+            
+        }
+        article.qna2{
+            
+            background-color: silver;
+            padding: 2em;
+            text-align: center;
+            
+        }
+        
+        aside{
+            
+            text-align: center;
+            margin-left: px;
+            background-color: white;
+            
+        }
+        
+        footer{
+            
+            clear:both;
+            background-color: black;
+            padding:1px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>We love Disney</h1>
+        </header>
+
+        <section>
+            여기 검색창을 활용 해 보세요!
+               <form action="https://www.google.com/search?ei=hywdXvmMDI2C-QaZl4C4Cw&q=disney&oq=disney&gs_l=psy-ab.3..0i71l8.0.0..10444366...0.2..0.0.0.......0......gws-wiz.YICD4VPEY_k&ved=0ahUKEwi57MfFioLnAhUNQd4KHZkLALcQ4dUDCAs&uact=5" method="">
+           <label for="search"></label>
+           <input type="search" name="q" id="search">
+           <input type="submit" value="검색!">
+         </form>
+           
+        <article class="qna1">
+             <h3>Disney Quiz</h3>
+              <table border="3"  align="center" >
+                <caption>문제 난이도 최하</caption>
+                  <th>
+                      Question
+                  </th>
+                  <th>
+                      Answer
+                  </th>
+                  
+                      <tr>
+                          <td>영화 알라딘에서 자스민의 남편 이름은 무엇일까요?</td>
+                          <td>
+                              <input type="radio" name="q1" value="술탄">1.술탄<br />
+                              <input type="radio" name="q1" value="지니">2.지니<br />
+                              <input type="radio" name="q1" value="알라딘">3.알라딘<br />
+                              <input type="radio" name="q1" value="김보경">4.김보경<br />
+                              <input type="button" name="q1a" value="정답확인" onclick="alert('정답은 3.알라딘!')">
+                          </td>
+                          
+                      </tr>
+                      <tr>
+                          <td>겨울왕국 주제곡을 전부 골라주세요!</td>
+                          <td>
+                             <input type="checkbox" name="q2" value="Let it go">1.Let it go<br />
+                             <input type="checkbox" name="q2" value="Into the unkown">2.Into the unkown<br />
+                              <input type="checkbox" name="q2" value="술이야">3.술이야<br />
+                              <input type="checkbox" name="q2" value="내 나이가 어때서">4.내 나이가 어때서<br />
+                              <input type="button" name="q2a" value="정답확인" onclick="alert('정답은1,2번입니다!')"></td>
+                          
+                      </tr>
+                      <tr>
+                          <td>다음 중 공주가 아닌 사람을 고르세요.</td>
+                          <td>
+                          <select name="princess">
+                            <option value="선택">-선택-</option>
+                            <option value="Aurora">Aurora</option>
+                            <option value="Cinderella">Cinderella</option>
+                            <option value="Rapunzel">Rapunzel</option>
+                            <option value="Rapunzel">김보경</option>
+                            <input type="button" name="q3a" value="정답확인" onclick="alert('정답은 없습니다(?)')">
+                            </select>
+                            </td>
+                      </tr>
+                  
+              </table>
+        </article>
+        <article class="qna2" align="center">
+            <h3>라푼젤의 정보를 입력해 보세요</h3><br>
+            <table border="3" align="center">
+                
+            <form>
+                  <tr>
+
+                       <td text-align="center">이름 </td>
+                       <td>
+                       <input type = "text" name="이름" /></td>
+                 </tr>
+
+
+
+                 <tr>
+                 <td>키</td>
+                 <td><input type = "text" name="키"></td>
+                 </tr>
+                 
+                 <tr>
+                 <td>몸무게</td>
+                 <td><input type = "password" name="몸무게"></td>
+                 </tr>
+                  
+                 <tr>
+                <td> 성별 </td>
+                <td><input type = "radio" name = "gender" value="남" checked> 남자
+                    <input type = "radio" name = "gender" value="여"> 여자
+               </td>
+                  </tr>
+
+
+
+
+              <tr>
+               <td> 이메일 </td>
+               <td><input type = "email" name="email">
+               </td>
+              </tr>
+
+
+
+
+                  <tr>
+                   <td> 주소 </td>
+                   <td>
+                <input type = "text" name="addrs">
+                  </td>
+
+                  <tr>
+                   <td> 휴대폰 </td>
+                   <td><input type="tel" name="tel" id="" placeholder="000-0000-0000" title="전화번호는 000-0000-0000형식으로 작성해주세요" pattern="\d{3}-\d{3,4}-\{4}">
+                 </td>
+                 </tr>
+                 <tr>
+                     <td colspan="2">
+                        <fieldset>
+                        <legend>라푼젤에게 시 한편을 전달해보세요</legend>
+                        <label for="title">제목 :</label>
+                        <input type="text" name="title" id="title" autofocus><br /><br />
+                        <textarea name="content" style="width: 300px; height: 200px; background-color: gray; text-align: left;" >
+                        </textarea>
+                        </fieldset>
+                     </td>
+                 </tr>
+                 
+                 <tr>
+                    <td colspan="2">
+                    <fieldset>
+                    <legend>라푼젤과 찍은 사진또는 영상을 업로드해주세요</legend>
+                      <label for="upload">Pic :</label>
+                    
+                      <input type="file" name="picupload">
+                        </fieldset>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td colspan="2">
+                         <input type="submit" name="submit" value="제출">
+                     </td>
+                 </tr>
+                 
+                </form>
+                </table>
+
+                
+                
+            </article>
+
+        </section>
+        <aside>
+          <label for="">디즈니가 얼마나 좋은지 표현하세요!</label>
+       <input type="range" name="range" step="30">
+        </aside>
+        <footer><a href="http://www.disney.co.kr">&copy; Disney</a></footer>
+    </div>
+</body>
+</html>

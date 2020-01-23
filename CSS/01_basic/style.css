@@ -1,0 +1,40 @@
+body{
+    
+    
+    background-color: violet
+    
+    
+    
+}
+
+
+
+
+h2{
+    
+    
+    color: peru; 
+    text-align: center;
+    
+    
+}
+
+p{
+    
+    
+    font-family: "돋움";
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 20px;
+    color: white;
+    
+    
+    
+}
+
+ul{
+    
+    color: white;
+    list-style: square;
+    
+}
